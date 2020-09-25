@@ -1,6 +1,6 @@
 <!-- <p>dish-detail works!</p> -->
 <div fxFlexLayout="row">
-    <div fxFlex *ngIf="dish">
+    <div fxFlex *ngIf="dish" [@visibility] = "visibility">
         <mat-card>
             <mat-card-header>
                 <mat-card-title>
@@ -21,7 +21,7 @@
             </mat-card-action>
         </mat-card>
     </div>
-    <div fxFlex *ngIf="dish">
+    <div fxFlex *ngIf="dish" [@visibility] = "visibility">
         <mat-card class="full-height">
             <mat-card-header>
                 <mat-card-title>
